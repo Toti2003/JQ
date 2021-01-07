@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link rel="stylesheet" href="1_cvic.css">
+    <script>
+ 
+    </script>
+</head>
+
+<body>
+    <form name="form" id="f">
+        <fieldset id="dis">
+            <legend>
+                <h2>Objednavka: (JQuery)</h2>
+            </legend>
+            <div>
+
+                <table cellspacing="2" cellpadding="1">
+                    <tr>
+                        <td colspan="3">
+                            <h3>Vyber mnozstvi krmiva:</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Krmivo:</td>
+                        <td>Pocet kg:</td>
+                        <td>Celkova cena:</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <select id="kr" name="krmivo" size="1">
+                                <option value="0" selected>Vyberte krmivo</option>
+                                <option value="150">Psi zradlo 150Kc/kg</option>
+                                <option value="120">Kocici zradlo 120Kc/kg</option>
+                                <option value="50">Zradlo pro rybicky 50Kc/kg</option>
+                                <option value="800">Zradlo pro tygra 800Kc/kg</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="kg" id="kgZ"></td>
+                        <td><input type="text"" name="cena" id="cenaF"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <h3>Zvolte vlastnosti krmiva:</h3>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><input type="checkbox" name="bio" value="30" class="celkF" id="bioZ"></td>
+                        <td><label for="bioZ">Bio kvalita (+ 30 procent ze základní ceny)</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="prem" value="50" class="celkF" id="premZ"></td>
+                        <td><label for="premZ">Extra premium kvalita (+50 procent ze základní ceny krmiva)</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="ch" value="-15" class="celkF" id="chZ"></td>
+                        <td><label for="chZ">Extra nekvalita pro chudé : -D (-15 procent ze základní ceny krmiva</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="d" value="500" class="celkF" id="dZ"></td>
+                        <td><label for="dZ">Dárkové balení (+500 Kč)</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <h3>Zvolte dopravu krmiva:</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="dopr" value="0" class="celkF" id="bp"></td>
+                        <td><label for="bp">Osobní odběr (bez příplatku)</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="dopr" value="10" class="celkF" id="kur"></td>
+                        <td><label for="kur">Firemní kurýr (+10 procent z aktuální ceny krmiva – tj. již včetně volitelných vlastností)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" name="dopr" value="250" class="celkF" id="cp"></td>
+                        <td><label for="cp">Česká pošta (+250 Kč)</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <h3>Souhrn objednavky:</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Vysledna cena krmiva</td>
+                        <td><input type="text" name="celkem" id="celkemZ"></td>
+                    </tr>
+                    <tr>
+                        <td>Zapiste kolik mate penez:</td>
+                        <td><input type="text" name="mamPen" id="okZ"></td>
+                        <td><input type="button" name="ok" value="Jsem OK?" id="okF"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">
+                            <h3>Zanechte svuj email:</h3>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jmeno:</td>
+                        <td><input type="text" name="em" id="emZ"></td>
+                        <td><input type="button" name="emok" value="@gmail.com" id="emailKontrolaF"></td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </fieldset>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="2_cvic.js"></script>
+</body>
+
+</html>
